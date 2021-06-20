@@ -1,6 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import {TextField, Typograpy} from '@material-ui/core'
+import {
+  TextField,
+  Typography,
+  Button,
+  List,
+  ListItem,
+  ListItemText,
+} from "@material-ui/core";
 
 function App() {
   return (
@@ -11,9 +18,9 @@ function App() {
         <TextField label="상세내용" size="normal" margin="normal" fullWidth multiline/>
       </div>
       <div className="list_area">리스트 영역</div>
-      <Typograpy variant="body2" coolr="textSecondary" align="center">
-        {'Copyright © 김종태'+new Date().getFullYear()+"."}
-      </Typograpy>
+      <Typography variant="body2" color="textSecondary" align="center">
+          {"Copyright ⓒ 김종태 " + new Date().getFullYear() + "."}
+      </Typography>
     </div>
   );
 }
