@@ -13,6 +13,13 @@ html{
   flex-direction: column;
 }
 
+.main-container{
+  box-shadow: 0 0 10px black;
+  width: 45%;
+  min-width: 300px;
+  margin: 20px 0;
+}
+
 .header {
   padding: 10px;
   font-size: calc(20px + 2vmin);
@@ -20,13 +27,19 @@ html{
 
 .input_area {
   background-color: rgb(126,184,223);
-  width: 45%;
-  min-width: 300px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .list_area {
   background-color: rgb(148,211,148);
-  width: 45%;
-  min-width: 300px;
+  width: 100%;
   min-height: 300px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+Button {
+  z-index: 100;
 }
